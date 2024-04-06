@@ -1,7 +1,58 @@
 
 div {
-    border: solid;
+    border-style: ridge;
+    color: #2f353d;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+
+  .col-md-6 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .row:first-child .column {
+    height: 420px;
+}
+
+.col-md-6 {
+    padding-left: 10px;
+    background-color: #e3bcbe;
+}
+
+#subhead1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+#subhead {
+    font-weight: bold;
+}
+
+img {
+    border-radius: 7px;
+    height: 300px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
 
 
 @media only screen and (min-width: 100px) {
@@ -9,15 +60,15 @@ div {
 
     /* this will change the container class background to red when tablet*/
 
-    .col {
-        background-color: lavenderblush;
+    .column {
+        background-color: #b6c9e3;
     }
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: will change the container class to orange*/
 
-    .col {
+    .column {
         background-color: lightgray;
     }
 }
@@ -25,7 +76,7 @@ div {
 @media only screen and (min-width: 992px) {
     /* For desktop: will change the container class to orange*/
 
-    .col {
+    .column {
         background-color: lightgoldenrodyellow;
     }
 }
@@ -33,8 +84,8 @@ div {
 @media only screen and (min-width: 1200px) {
     /* For desktop: will change the container class to orange*/
 
-    .col {
-        background-color: lavender;
+    .column {
+        background-color: #b6c9e3;
     }
 }
 
